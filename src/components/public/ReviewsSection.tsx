@@ -157,21 +157,21 @@ export default function ReviewsSection() {
                 </div>
 
                 {/* Stats Row */}
-                <div className="grid grid-cols-4 gap-4 mt-12 max-w-2xl mx-auto">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 max-w-2xl mx-auto">
                     <div className="text-center">
-                        <div className="text-2xl md:text-3xl font-bold text-gray-900">4.9</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900">4.9</div>
                         <div className="text-xs text-gray-500">Rating</div>
                     </div>
                     <div className="text-center">
-                        <div className="text-2xl md:text-3xl font-bold text-gray-900">500+</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900">500+</div>
                         <div className="text-xs text-gray-500">Reviews</div>
                     </div>
                     <div className="text-center">
-                        <div className="text-2xl md:text-3xl font-bold text-gray-900">98%</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900">98%</div>
                         <div className="text-xs text-gray-500">Recommend</div>
                     </div>
                     <div className="text-center">
-                        <div className="text-2xl md:text-3xl font-bold text-gray-900">10K+</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900">10K+</div>
                         <div className="text-xs text-gray-500">Customers</div>
                     </div>
                 </div>

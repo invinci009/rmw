@@ -56,11 +56,11 @@ export default function Footer() {
                                 <h4 className="text-xl font-bold mb-1 text-white">Get Exclusive Offers</h4>
                                 <p className="text-gray-400 text-sm">Subscribe for special discounts and updates</p>
                             </div>
-                            <div className="flex gap-3 w-full md:w-auto">
+                            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="flex-1 md:w-64 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    className="flex-1 sm:w-64 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
                                 />
                                 <button className="px-6 py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap">
                                     Subscribe

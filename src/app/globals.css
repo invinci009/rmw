@@ -275,10 +275,22 @@ a {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 3rem 0;
+}
+
+@media (min-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
 }
 
 @media (min-width: 768px) {
+  .section {
+    padding: 5rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
   .section {
     padding: 7rem 0;
   }
@@ -395,10 +407,10 @@ a {
    ============================================ */
 .whatsapp-float {
   position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  width: 64px;
-  height: 64px;
+  bottom: 1rem;
+  right: 1rem;
+  width: 52px;
+  height: 52px;
   background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   color: white;
   border-radius: 50%;
@@ -408,6 +420,15 @@ a {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
   z-index: 1000;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 640px) {
+  .whatsapp-float {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .whatsapp-float:hover {
