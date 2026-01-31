@@ -91,7 +91,7 @@ export default function BookingPage() {
         return (
             <>
                 <Header />
-                <main className="min-h-screen bg-[var(--muted)] py-12">
+                <main className="min-h-screen bg-[var(--muted)] pt-24 pb-12">
                     <div className="container max-w-lg">
                         <div className="card p-8 text-center">
                             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -135,8 +135,8 @@ export default function BookingPage() {
     return (
         <>
             <Header />
-            <main className="min-h-screen bg-[var(--muted)] py-12">
-                <div className="container max-w-2xl">
+            <main className="min-h-screen bg-[var(--muted)] pt-24 pb-12">
+                <div className="container max-w-2xl px-4">
                     {/* Page Header */}
                     <div className="text-center mb-8">
                         <h1 className="text-3xl md:text-4xl font-bold text-[var(--primary)] mb-2">

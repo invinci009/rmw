@@ -58,8 +58,8 @@ export default function TrackStatusPage() {
                         <div className="relative flex flex-col items-center">
                             <div
                                 className={`w-10 h-10 rounded-full flex items-center justify-center z-10 ${step.completed
-                                        ? 'bg-[var(--accent)] text-white'
-                                        : 'bg-gray-200 text-gray-400'
+                                    ? 'bg-[var(--accent)] text-white'
+                                    : 'bg-gray-200 text-gray-400'
                                     }`}
                             >
                                 {step.completed ? (
@@ -150,8 +150,8 @@ export default function TrackStatusPage() {
     return (
         <>
             <Header />
-            <main className="min-h-screen bg-[var(--muted)] py-12">
-                <div className="container max-w-2xl">
+            <main className="min-h-screen bg-[var(--muted)] pt-24 pb-12">
+                <div className="container max-w-2xl px-4">
                     {/* Page Header */}
                     <div className="text-center mb-8">
                         <h1 className="text-3xl md:text-4xl font-bold text-[var(--primary)] mb-2">
@@ -171,8 +171,8 @@ export default function TrackStatusPage() {
                                     type="button"
                                     onClick={() => { setSearchType('phone'); setSearchValue(''); setTrackingData(null); setError(''); }}
                                     className={`flex-1 py-3 px-4 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors ${searchType === 'phone'
-                                            ? 'bg-[var(--primary)] text-white'
-                                            : 'bg-[var(--muted)] text-[var(--muted-foreground)] hover:bg-gray-200'
+                                        ? 'bg-[var(--primary)] text-white'
+                                        : 'bg-[var(--muted)] text-[var(--muted-foreground)] hover:bg-gray-200'
                                         }`}
                                 >
                                     <Phone size={18} />
@@ -182,8 +182,8 @@ export default function TrackStatusPage() {
                                     type="button"
                                     onClick={() => { setSearchType('jobcard'); setSearchValue(''); setTrackingData(null); setError(''); }}
                                     className={`flex-1 py-3 px-4 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors ${searchType === 'jobcard'
-                                            ? 'bg-[var(--primary)] text-white'
-                                            : 'bg-[var(--muted)] text-[var(--muted-foreground)] hover:bg-gray-200'
+                                        ? 'bg-[var(--primary)] text-white'
+                                        : 'bg-[var(--muted)] text-[var(--muted-foreground)] hover:bg-gray-200'
                                         }`}
                                 >
                                     <FileText size={18} />
@@ -192,7 +192,7 @@ export default function TrackStatusPage() {
                             </div>
 
                             {/* Search Input */}
-                            <div className="flex gap-3">
+                            <div className="flex flex-col sm:flex-row gap-3">
                                 <input
                                     type="text"
                                     value={searchValue}
@@ -208,7 +208,7 @@ export default function TrackStatusPage() {
                                 <button
                                     type="submit"
                                     disabled={isLoading}
-                                    className="btn btn-primary"
+                                    className="btn btn-primary w-full sm:w-auto"
                                 >
                                     {isLoading ? (
                                         <span className="spinner" />

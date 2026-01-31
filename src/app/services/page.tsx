@@ -123,13 +123,13 @@ export default function ServicesPage() {
             <Header />
             <main className="min-h-screen">
                 {/* Hero Section */}
-                <section className="bg-[var(--primary)] text-white py-16 md:py-24">
-                    <div className="container">
+                <section className="bg-[var(--primary)] text-white pt-28 pb-12 md:py-24">
+                    <div className="container px-4">
                         <div className="max-w-2xl">
-                            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
                                 Our Services
                             </h1>
-                            <p className="text-lg text-gray-200">
+                            <p className="text-base sm:text-lg text-gray-200">
                                 Comprehensive car and bike care solutions from basic wash to complete
                                 protection. Each service is performed by skilled technicians using
                                 premium materials.
@@ -188,7 +188,7 @@ export default function ServicesPage() {
                                                         </span>
                                                     ))}
                                                 </div>
-                                                <div className="flex items-center justify-between gap-4">
+                                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                                                     <div>
                                                         <p className="text-sm text-[var(--muted-foreground)]">Starting from</p>
                                                         <p className="text-2xl font-bold text-[var(--accent)]">
@@ -197,7 +197,7 @@ export default function ServicesPage() {
                                                     </div>
                                                     <Link
                                                         href={`/booking?service=${service.slug}`}
-                                                        className="btn btn-primary"
+                                                        className="btn btn-primary w-full sm:w-auto"
                                                     >
                                                         Book Now
                                                         <ArrowRight size={18} />
@@ -213,16 +213,16 @@ export default function ServicesPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="bg-[var(--primary)] text-white py-16">
-                    <div className="container text-center">
-                        <h2 className="text-3xl font-bold mb-4">
+                <section className="bg-[var(--primary)] text-white py-12 md:py-16">
+                    <div className="container text-center px-4">
+                        <h2 className="text-2xl sm:text-3xl font-bold mb-4">
                             Not Sure Which Service You Need?
                         </h2>
-                        <p className="text-gray-200 mb-8 max-w-xl mx-auto">
+                        <p className="text-gray-200 mb-8 max-w-xl mx-auto text-sm sm:text-base">
                             Call us or visit our workshop. Our experts will inspect your vehicle
                             and recommend the best care solution.
                         </p>
-                        <div className="flex flex-wrap justify-center gap-4">
+                        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
                             <a href="tel:9931759995" className="btn bg-white text-[var(--primary)] hover:bg-gray-100">
                                 Call: 9931759995
                             </a>

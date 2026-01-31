@@ -27,14 +27,14 @@ const badges = [
 
 export default function TrustBadges() {
     return (
-        <div className="flex flex-wrap items-center justify-center gap-3">
+        <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-2 sm:gap-3">
             {badges.map((badge, index) => (
                 <div
                     key={index}
-                    className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-medium ${badge.color}`}
+                    className={`inline-flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 rounded-full border text-[10px] sm:text-xs font-medium ${badge.color}`}
                 >
                     {badge.icon}
-                    {badge.label}
+                    <span className="truncate">{badge.label}</span>
                 </div>
             ))}
         </div>
